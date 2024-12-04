@@ -24,6 +24,7 @@
     <ProjectGuid>{a5233de2-06fd-4d4d-ab88-fed30c799edb}</ProjectGuid>
     <RootNamespace>ParkingTicketSimulatorProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Test Simulator Project</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Parking Ticket Simulator Project.cpp" />
+    <ClCompile Include="Test Simulator Project.cpp" />
+    <ClCompile Include="ParkingTicket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ParkedCar.h" />
+    <ClInclude Include="ParkingMeter.h" />
+    <ClInclude Include="ParkingTicket.h" />
+    <ClInclude Include="PoliceOfficer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
