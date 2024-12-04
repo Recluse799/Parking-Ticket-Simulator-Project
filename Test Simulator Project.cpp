@@ -10,7 +10,7 @@
 int main() 
 {
    
-    ParkedCar pcar("XYZ123", "Toyota", "Corolla", "Blue", 350); //  minutes parked, create Parked car object
+    ParkedCar pcar("XYZ123", "Toyota", "Corolla", "Red", -50); //  minutes parked, create Parked car object
 
     
     ParkingMeter pmeter(60); // 60 minutes purchased, parking meter object

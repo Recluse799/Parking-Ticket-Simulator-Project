@@ -4,6 +4,7 @@
 
 #include <string>
 
+
 using namespace std;
 
 class ParkedCar
@@ -13,7 +14,8 @@ public:
 		const int& mn = 0) :license(ln), make(mk), model(ml), color(co)
 	{
 		if (mn < 0) {
-			throw invalid_argument("Minutes parked cannot be negative.");
+			cout << "Error: Minutes parked cannot be negative. Exiting program." << endl;
+			exit(EXIT_FAILURE); // Exit the program with failure status
 		} minParked = mn;
 	} 
 		/* constructor(are the type) arguments passed

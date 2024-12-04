@@ -13,7 +13,8 @@ public:
 	ParkingMeter( int minPur = 0): minPurchased(minPur) 
 		{
 			if (minPurchased < 0) {
-				throw invalid_argument("Minutes purchased cannot be negative.");
+				cout << "Error: Minutes parked cannot be negative. Exiting program." << endl;
+				exit(EXIT_FAILURE); // Exit the program with failure status
 			}
 		} /* constructor(are the type) arguments passed
 	 // to constructor, a member variable license is intialized with value of (ln),{} can be empty or include additonal logic
